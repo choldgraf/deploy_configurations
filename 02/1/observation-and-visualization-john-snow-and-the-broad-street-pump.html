@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Observation and Visualization: John Snow and the Broad Street Pump &#8212; My Jupyter Book  documentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../_static/jupyterbook.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide_output div.cell_output, .tag_hide_cell.cell';</script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Snow’s “Grand Experiment”" href="../2/snow-s-grand-experiment.html" />
+    <link rel="prev" title="Causality and Experiments" href="../causality-and-experiments.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+<div class='top'>
+<button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-arrow-left"></i>
+    <i class="fas fa-arrow-up"></i>
+</button>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+          
+<div class="col-12 col-md-3 col-xl-3 bd-sidebar show" id="site-navigation">
+<div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">My Jupyter Book  documentation</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="active">
+    <a href="../causality-and-experiments.html">Causality and Experiments</a>
+  <ul class="nav sidenav_l2">
+    <li class="active">
+      <a href="">Observation and Visualization: John Snow and the Broad Street Pump</a>
+    </li>
+    <li class="">
+      <a href="../2/snow-s-grand-experiment.html">Snow’s “Grand Experiment”</a>
+    </li>
+    <li class="">
+      <a href="../5/endnote.html">Endnote</a>
+    </li>
+    <li class="">
+      <a href="../4/randomization.html">Randomization</a>
+    </li>
+    <li class="">
+      <a href="../3/establishing-causality.html">Establishing Causality</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../../04/1/Numbers.html">More About Float Values</a>
+  </li>
+  <li class="">
+    <a href="../../03/programming-in-python.html">Programming in Python</a>
+  </li>
+  <li class="">
+    <a href="../../01/what-is-data-science.html">What is Data Science</a>
+  </li>
+</ul>
+</nav>
+<p class="sidebar_footer">Powered by <a href='https://jupyterbook.org'>Jupyter Book</a></p>
+</div>
+
+          
+<div class="d-none d-xl-block col-xl-2 bd-toc">
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+</div>
+
+
+          
+<main class="col py-md-3 pl-md-5 pr-0 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar sticky-top">
+    <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <a class="download-buttons" href="../../_sources/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.md.txt"><button type="button" class="btn btn-secondary topbarbtn"><i class="fas fa-download"></i>.md</button></a>
+    
+</div>
+    <div class="row">
+        <div class="col-12 ">
+        
+              <div>
+                
+  <div class="section" id="observation-and-visualization-john-snow-and-the-broad-street-pump">
+<h1>Observation and Visualization: John Snow and the Broad Street Pump<a class="headerlink" href="#observation-and-visualization-john-snow-and-the-broad-street-pump" title="Permalink to this headline">¶</a></h1>
+<p>One of the earliest examples of astute observation eventually leading to the
+establishment of causality dates back more than 150 years. To get your mind into
+the right timeframe, try to imagine London in the 1850’s. It was the world’s
+wealthiest city but many of its people were desperately poor. Charles Dickens,
+then at the height of his fame, was writing about their plight. Disease was rife
+in the poorer parts of the city, and cholera was among the most feared. It was
+not yet known that germs cause disease; the leading theory was that “miasmas”
+were the main culprit. Miasmas manifested themselves as bad smells, and were
+thought to be invisible poisonous particles arising out of decaying matter.
+Parts of London did smell very bad, especially in hot weather. To protect
+themselves against infection, those who could afford to held sweet-smelling
+things to their noses.</p>
+<p>For several years, a doctor by the name of John Snow had been following the
+devastating waves of cholera that hit England from time to time. The disease
+arrived suddenly and was almost immediately deadly: people died within a day or
+two of contracting it, hundreds could die in a week, and the total death toll in
+a single wave could reach tens of thousands. Snow was skeptical of the miasma
+theory. He had noticed that while entire households were wiped out by cholera,
+the people in neighboring houses sometimes remained completely unaffected. As
+they were breathing the same air—and miasmas—as their neighbors, there was no
+compelling association between bad smells and the incidence of cholera.</p>
+<p>Snow had also noticed that the onset of the disease almost always involved
+vomiting and diarrhea. He therefore believed that that infection was carried by
+something people ate or drank, not by the air that they breathed. His prime
+suspect was water contaminated by sewage.</p>
+<p>At the end of August 1854, cholera struck in the overcrowded Soho district of
+London. As the deaths mounted, Snow recorded them diligently, using a method
+that went on to become standard in the study of how diseases spread: <em>he drew a
+map</em>. On a street map of the district, he recorded the location of each death.</p>
+<p>Here is Snow’s original map. Each black bar represents one death. The black
+discs mark the locations of water pumps. The map displays a striking
+revelation–the deaths are roughly clustered around the Broad Street pump.
+<img alt="Snow’s Cholera Map" src="02/1/../../../images/snow_map.jpg" /></p>
+<p>Snow studied his map carefully and investigated the apparent anomalies. All of
+them implicated the Broad Street pump. For example:</p>
+<ul class="simple">
+<li><p>There were deaths in houses that were nearer the Rupert Street pump than the
+Broad Street pump. Though the Rupert Street pump was closer as the crow flies,
+it was less convenient to get to because of dead ends and the layout of the
+streets. The residents in those houses used the Broad Street pump instead.</p></li>
+<li><p>There were no deaths in two blocks just east of the pump. That was the
+location of the Lion Brewery, where the workers drank what they brewed. If
+they wanted water, the brewery had its own well.</p></li>
+<li><p>There were scattered deaths in houses several blocks away from the Broad
+Street pump. Those were children who drank from the Broad Street pump on their
+way to school. The pump’s water was known to be cool and refreshing.</p></li>
+</ul>
+<p>The final piece of evidence in support of Snow’s theory was provided by two
+isolated deaths in the leafy and genteel Hampstead area, quite far from Soho.
+Snow was puzzled by these until he learned that the deceased were Mrs. Susannah
+Eley, who had once lived in Broad Street, and her niece. Mrs. Eley had water
+from the Broad Street pump delivered to her in Hampstead every day. She liked
+its taste.</p>
+<p>Later it was discovered that a cesspit that was just a few feet away from the
+well of the Broad Street pump had been leaking into the well. Thus the pump’s
+water was contaminated by sewage from the houses of cholera victims.</p>
+<p>Snow used his map to convince local authorities to remove the handle of the
+Broad Street pump. Though the cholera epidemic was already on the wane when he
+did so, it is possible that the disabling of the pump prevented many deaths from
+future waves of the disease.</p>
+<p>The removal of the Broad Street pump handle has become the stuff of legend. At
+the Centers for Disease Control (CDC) in Atlanta, when scientists look for
+simple answers to questions about epidemics, they sometimes ask each other,
+“Where is the handle to this pump?”</p>
+<p>Snow’s map is one of the earliest and most powerful uses of data visualization.
+Disease maps of various kinds are now a standard tool for tracking epidemics.</p>
+<p><strong>Towards Causality</strong></p>
+<p>Though the map gave Snow a strong indication that  the cleanliness of the water
+supply was the key to controlling cholera, he was still a long way from a
+convincing scientific argument that contaminated water was causing the spread of
+the disease. To make a more compelling case, he had to use the method of
+<em>comparison</em>.</p>
+<p>Scientists use comparison to identify an association between a treatment and an
+outcome. They compare the outcomes of a group of individuals who got the
+treatment (the <em>treatment group</em>) to the outcomes of a group who did not (the
+<em>control group</em>). For example, researchers today might compare the average
+murder rate in states that have the death penalty with the average murder rate
+in states that don’t.</p>
+<p>If the results are different, that is evidence for an association. To determine
+causation, however, even more care is needed.</p>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../causality-and-experiments.html" title="previous page">Causality and Experiments</a>
+    <a class='right-next' id="next-link" href="../2/snow-s-grand-experiment.html" title="next page">Snow’s “Grand Experiment”</a>
+
+    </div>
+    <footer class="footer">
+  <div class="container">
+    <p>
+          &copy; Copyright 2020.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
+    </p>
+  </div>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>

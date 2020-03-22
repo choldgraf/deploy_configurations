@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>3.2.1 Growth &#8212; My Jupyter Book  documentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../_static/jupyterbook.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide_output div.cell_output, .tag_hide_cell.cell';</script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Choosing Sets of Columns" href="../../4/Introduction_to_Tables.html" />
+    <link rel="prev" title="3.2 Names" href="../Names.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+<div class='top'>
+<button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-arrow-left"></i>
+    <i class="fas fa-arrow-up"></i>
+</button>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+          
+<div class="col-12 col-md-3 col-xl-3 bd-sidebar show" id="site-navigation">
+<div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">My Jupyter Book  documentation</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../../../02/causality-and-experiments.html">Causality and Experiments</a>
+  </li>
+  <li class="">
+    <a href="../../../04/1/Numbers.html">More About Float Values</a>
+  </li>
+  <li class="active">
+    <a href="../../programming-in-python.html">Programming in Python</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../../1/Expressions.html">3.1 Expressions</a>
+    </li>
+    <li class="active">
+      <a href="../Names.html">3.2 Names</a>
+      <ul class="nav sidenav_l3">
+      <li class="active">
+        <a href="">3.2.1 Growth</a>
+      </li>
+    </ul>
+    </li>
+    <li class="">
+      <a href="../../4/Introduction_to_Tables.html">Choosing Sets of Columns</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../../../01/what-is-data-science.html">What is Data Science</a>
+  </li>
+</ul>
+</nav>
+<p class="sidebar_footer">Powered by <a href='https://jupyterbook.org'>Jupyter Book</a></p>
+</div>
+
+          
+<div class="d-none d-xl-block col-xl-2 bd-toc">
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+</div>
+
+
+          
+<main class="col py-md-3 pl-md-5 pr-0 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar sticky-top">
+    <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <a class="download-buttons" href="../../../_sources/03/2/1/Growth.ipynb.txt"><button type="button" class="btn btn-secondary topbarbtn"><i class="fas fa-download"></i>.ipynb</button></a>
+    
+</div>
+    <div class="row">
+        <div class="col-12 ">
+        
+              <div>
+                
+  <div class="section" id="growth">
+<h1>3.2.1 Growth<a class="headerlink" href="#growth" title="Permalink to this headline">¶</a></h1>
+<p>The relationship between two measurements of the same quantity taken at different times is often expressed as a <em>growth rate</em>. For example, the United States federal government <a class="reference external" href="http://www.bls.gov/opub/mlr/2013/article/industry-employment-and-output-projections-to-2022-1.htm">employed</a> 2,766,000 people in 2002 and 2,814,000 people in 2012. To compute a growth rate, we must first decide which value to treat as the <code class="docutils literal notranslate"><span class="pre">initial</span></code> amount. For values over time, the earlier value is a natural choice. Then, we divide the difference between the <code class="docutils literal notranslate"><span class="pre">changed</span></code> and <code class="docutils literal notranslate"><span class="pre">initial</span></code> amount by the <code class="docutils literal notranslate"><span class="pre">initial</span></code> amount.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial</span> <span class="o">=</span> <span class="mi">2766000</span>
+<span class="n">changed</span> <span class="o">=</span> <span class="mi">2814000</span>
+<span class="p">(</span><span class="n">changed</span> <span class="o">-</span> <span class="n">initial</span><span class="p">)</span> <span class="o">/</span> <span class="n">initial</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.01735357917570499
+</pre></div>
+</div>
+</div>
+</div>
+<p>It is also typical to subtract one from the ratio of the two measurements, which yields the same value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">changed</span><span class="o">/</span><span class="n">initial</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.017353579175704903
+</pre></div>
+</div>
+</div>
+</div>
+<p>This value is the growth rate over 10 years. A useful property of growth rates is that they don’t change even if the values are expressed in different units. So, for example, we can express the same relationship between thousands of people in 2002 and 2012.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial</span> <span class="o">=</span> <span class="mi">2766</span>
+<span class="n">changed</span> <span class="o">=</span> <span class="mi">2814</span>
+<span class="p">(</span><span class="n">changed</span><span class="o">/</span><span class="n">initial</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.017353579175704903
+</pre></div>
+</div>
+</div>
+</div>
+<p>In 10 years, the number of employees of the US Federal Government has increased by only 1.74%. In that time, the total expenditures of the US Federal Government increased from $2.37 trillion to $3.38 trillion in 2012.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial</span> <span class="o">=</span> <span class="mf">2.37</span>
+<span class="n">changed</span> <span class="o">=</span> <span class="mf">3.38</span>
+<span class="p">(</span><span class="n">changed</span><span class="o">/</span><span class="n">initial</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.4261603375527425
+</pre></div>
+</div>
+</div>
+</div>
+<p>A 42.6% increase in the federal budget is much larger than the 1.74% increase in federal employees. In fact, the number of federal employees has grown much more slowly than the population of the United States, which increased 9.21% in the same time period from 287.6 million people in 2002 to 314.1 million in 2012.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial</span> <span class="o">=</span> <span class="mf">287.6</span>
+<span class="n">changed</span> <span class="o">=</span> <span class="mf">314.1</span>
+<span class="p">(</span><span class="n">changed</span><span class="o">/</span><span class="n">initial</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.09214186369958277
+</pre></div>
+</div>
+</div>
+</div>
+<p>A growth rate can be negative, representing a decrease in some value. For example, the number of manufacturing jobs in the US decreased from 15.3 million in 2002 to 11.9 million in 2012, a -22.2% growth rate.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial</span> <span class="o">=</span> <span class="mf">15.3</span>
+<span class="n">changed</span> <span class="o">=</span> <span class="mf">11.9</span>
+<span class="p">(</span><span class="n">changed</span><span class="o">/</span><span class="n">initial</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>-0.2222222222222222
+</pre></div>
+</div>
+</div>
+</div>
+<p>An annual growth rate is a growth rate of some quantity over a single year. An annual growth rate of 0.035, accumulated each year for 10 years, gives a much larger ten-year growth rate of 0.41 (or 41%).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">*</span> <span class="mf">1.035</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.410598760621121
+</pre></div>
+</div>
+</div>
+</div>
+<p>This same computation can be expressed using names and exponents.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">annual_growth_rate</span> <span class="o">=</span> <span class="mf">0.035</span>
+<span class="n">ten_year_growth_rate</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">annual_growth_rate</span><span class="p">)</span> <span class="o">**</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="n">ten_year_growth_rate</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.410598760621121
+</pre></div>
+</div>
+</div>
+</div>
+<p>Likewise, a ten-year growth rate can be used to compute an equivalent annual growth rate. Below, <code class="docutils literal notranslate"><span class="pre">t</span></code> is the number of years that have passed between measurements. The following computes the annual growth rate of federal expenditures over the last 10 years.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial</span> <span class="o">=</span> <span class="mf">2.37</span>
+<span class="n">changed</span> <span class="o">=</span> <span class="mf">3.38</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="p">(</span><span class="n">changed</span><span class="o">/</span><span class="n">initial</span><span class="p">)</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.03613617208346853
+</pre></div>
+</div>
+</div>
+</div>
+<p>The total growth over 10 years is equivalent to a 3.6% increase each year.</p>
+<p>In summary, a growth rate <code class="docutils literal notranslate"><span class="pre">g</span></code> is used to describe the relative size of an <code class="docutils literal notranslate"><span class="pre">initial</span></code> amount and a <code class="docutils literal notranslate"><span class="pre">changed</span></code> amount after some amount of time <code class="docutils literal notranslate"><span class="pre">t</span></code>. To compute <span class="math notranslate nohighlight">\(changed\)</span>, apply the growth rate <code class="docutils literal notranslate"><span class="pre">g</span></code> repeatedly, <code class="docutils literal notranslate"><span class="pre">t</span></code> times using exponentiation.</p>
+<p><code class="docutils literal notranslate"><span class="pre">initial</span> <span class="pre">*</span> <span class="pre">(1</span> <span class="pre">+</span> <span class="pre">g)</span> <span class="pre">**</span> <span class="pre">t</span></code></p>
+<p>To compute <code class="docutils literal notranslate"><span class="pre">g</span></code>, raise the total growth to the power of <code class="docutils literal notranslate"><span class="pre">1/t</span></code> and subtract one.</p>
+<p><code class="docutils literal notranslate"><span class="pre">(changed/initial)</span> <span class="pre">**</span> <span class="pre">(1/t)</span> <span class="pre">-</span> <span class="pre">1</span></code></p>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../Names.html" title="previous page">3.2 Names</a>
+    <a class='right-next' id="next-link" href="../../4/Introduction_to_Tables.html" title="next page">Choosing Sets of Columns</a>
+
+    </div>
+    <footer class="footer">
+  <div class="container">
+    <p>
+          &copy; Copyright 2020.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
+    </p>
+  </div>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>
